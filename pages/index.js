@@ -14,7 +14,7 @@ const Banner = ({
   linkName,
   imageUrl,
 }) => (
-  <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="96">
+  <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="24">
     <Image src={imageUrl} width={500} height={300} alt="banner image" />
     <Box p="5">
       <Text color="gray.500" fontSize="sm" fontWeight="medium">
@@ -55,7 +55,7 @@ export default function Home({ propertiesForRent, propertiesForSale }) {
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
       />
 
-      <Flex flexWrap="wrap" gap="64px 30px">
+      <Flex flexWrap="wrap" gap="64px 24px">
         {propertiesForRent.map((property) => (
           <Property property={property} key={property.id} />
         ))}
@@ -72,7 +72,7 @@ export default function Home({ propertiesForRent, propertiesForSale }) {
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008"
       />
 
-      <Flex flexWrap="wrap" gap="64px 30px">
+      <Flex flexWrap="wrap" gap="64px 24px">
         {propertiesForSale.map((property) => (
           <Property property={property} key={property.id} />
         ))}

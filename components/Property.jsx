@@ -24,7 +24,7 @@ const Property = ({
   <Link href={`/property/${externalID}`} passHref>
     <Flex
       flexWrap="wrap"
-      w="420px"
+      w="390px"
       paddingTop="0"
       justifyContent="flex-start"
       cursor="pointer"
@@ -38,7 +38,7 @@ const Property = ({
         />
       </Box>
 
-      <Box w="full" display={"flex"} flexDirection={"column"} gap={24}>
+      <Box w="full" display={"flex"} flexDirection={"column"} gap="24px">
         <Flex
           paddingTop="2"
           alignItems="center"
@@ -62,8 +62,8 @@ const Property = ({
 
         <Flex
           alignItems="center"
-          justifyContent={"center"}
-          gap="16"
+          justifyContent="center"
+          gap="16px"
           color="blue.400"
         >
           {rooms} <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft
